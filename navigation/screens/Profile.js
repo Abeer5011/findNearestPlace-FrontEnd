@@ -1,5 +1,4 @@
-import firebase from "firebase"
-import React, { useContext, useState } from "react"
+import React, { useContext } from "react"
 require("firebase/auth")
 import { Text, View, StyleSheet, TouchableOpacity } from "react-native"
 import PlaceContext from "../../context/PlaceContext"

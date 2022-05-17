@@ -1,5 +1,3 @@
-import firebase from "firebase"
-require("firebase/auth")
 import React, { useState } from "react"
 import { Ionicons } from "@expo/vector-icons"
 import { NavigationContainer } from "@react-navigation/native"
@@ -17,28 +15,6 @@ const signupScreen = "Sign Up"
 
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false)
-
-  // const firebaseConfig = {
-  //   apiKey: "AIzaSyAGuMy84HvmHUh3bP1E1f2IRz0zQJ04WXg",
-  //   authDomain: "reactnativefirebase-9bf49.firebaseapp.com",
-  //   projectId: "reactnativefirebase-9bf49",
-  //   storageBucket: "reactnativefirebase-9bf49.appspot.com",
-  //   messagingSenderId: "1014859312544",
-  //   appId: "1:1014859312544:web:83311af914e3a077c788c5",
-  // }
-  // if (!firebase.apps.length) {
-  //   firebase.initializeApp(firebaseConfig)
-  // } else {
-  //   firebase.app()
-  // }
-
-  // firebase.auth().onAuthStateChanged(user => {
-  //   if (user != null) {
-  //     setIsLoggedIn(true)
-  //   } else {
-  //     setIsLoggedIn(false)
-  //   }
-  // })
 
   const store = {
     setIsLoggedIn,

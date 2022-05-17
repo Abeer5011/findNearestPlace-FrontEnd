@@ -16,9 +16,7 @@ export default function SignUpScreen({ navigation }) {
       }
 
       console.log(signupBody)
-      // if (pwd2 != pwd) {
-      //   alert("password not matching")
-      // }
+
       const request = await fetch("http://192.168.1.16:8080/api/v1/auth/register", {
         method: "POST",
         headers: {
